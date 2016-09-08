@@ -1,0 +1,20 @@
+---
+title: "RHW1"
+author: "Minchul Kim"
+date: "September 8, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R HW github upload 
+
+```{r}
+mydata = airquality
+head(mydata)
+lm(formula = Ozone ~ Wind, data = mydata)
+
+```
+
