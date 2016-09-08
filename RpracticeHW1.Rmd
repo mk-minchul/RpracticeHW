@@ -15,6 +15,9 @@ knitr::opts_chunk$set(echo = TRUE)
 mydata = airquality
 head(mydata)
 lm(formula = Ozone ~ Wind, data = mydata)
-
+attach(mydata)
+plot(Wind, Ozone, main="Scatterplot", 
+  	xlab="Ozone ", ylab="Wind ", pch=19)
+abline(lm(formula = Ozone ~ Wind, data = mydata), col="red") # regression line (y~x) 
 ```
 
